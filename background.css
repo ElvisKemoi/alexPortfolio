@@ -1,0 +1,128 @@
+.figures {
+    z-index: 0;
+}
+
+.blur i {
+    z-index: 0;
+    font-size: 3rem;
+    opacity: 0.5;
+    color: #0ef;
+    filter: blur(0.2rem);
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+    position: fixed;
+}
+
+.one {
+    top: 10vh;
+    right: 30vw;
+    transform: rotate(20deg);
+    animation-name: stretch;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.two {
+    top: 20vh;
+    right: 70vw;
+    transform: rotate(2deg);
+    animation-name: stretch;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.three {
+    top: 40vh;
+    right: 40vw;
+    transform: rotate(4deg);
+    animation-name: stretch;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.four {
+    top: 60vh;
+    right: 10vw;
+    transform: rotate(20deg);
+    animation-name: stretch;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.five {
+    top: 80vh;
+    right: 55vw;
+    transform: rotate(20deg);
+    animation-name: stretch;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.six {
+    top: 85vh;
+    right: 20vw;
+    animation-name: rot;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.seven {
+    top: 44vh;
+    transform: rotate(20deg);
+    right: 90vw;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.eight {
+    top: 14vh;
+    transform: rotate(20deg);
+    right: 9vw;
+    animation-name: rot;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
