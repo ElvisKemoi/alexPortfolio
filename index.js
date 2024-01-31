@@ -6,6 +6,7 @@ ScrollReveal({
     distance: "2rem",
     duration: 1900,
     viewOffset: { top: -500 },
+    mobile: true
 });
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img, .services-container, .projects-box", {
